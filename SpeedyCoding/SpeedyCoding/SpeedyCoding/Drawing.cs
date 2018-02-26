@@ -7,8 +7,23 @@ using System.Drawing;
 
 namespace SpeedyCoding
 {
-    public static class SpeedyCoding_Drawing
+
+    /// <summary>
+    /// Extension Method for system.Drawing
+    /// </summary>
+    public static class Drawing
     {
+
+        /// <summary>
+        /// Expend rectangle size. 
+        /// top   = top   + margin
+        /// bot   = bot   + margin
+        /// left  = left  + margin
+        /// right = right + margin
+        /// </summary>
+        /// <param name="this"></param>
+        /// <param name="margin"></param>
+        /// <returns></returns>
         public static System.Drawing.Rectangle ExpendRect(
           this System.Drawing.Rectangle @this ,
           int margin
@@ -21,6 +36,19 @@ namespace SpeedyCoding
                 , @this.Height + margin * 2 );
         }
 
+
+
+
+        /// <summary>
+        /// Shurink rectangle size. 
+        /// top   = top   - margin
+        /// bot   = bot   - margin
+        /// left  = left  - margin
+        /// right = right - margin 
+        /// </summary>
+        /// <param name="this"></param>
+        /// <param name="margin"></param>
+        /// <returns></returns>
         public static System.Drawing.Rectangle ShurinkRect(
             this System.Drawing.Rectangle @this ,
             int margin

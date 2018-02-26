@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//This code is from http://codebetter.com/matthewpodwysocki/2008/09/16/functional-c-pattern-matching/
+
 namespace SpeedyCoding
 {
     public class IncompletePatternMatchException :
@@ -23,6 +25,12 @@ namespace SpeedyCoding
             _value = value;
         }
 
+        /// <summary>
+        /// Define matching condition
+        /// </summary>
+        /// <param name="condition"></param>
+        /// <param name="result"></param>
+        /// <returns></returns>
         public PatternMatchOnValue<TIn , TOut> With(
             Predicate<TIn> condition ,
             Func<TIn , TOut> result )
@@ -36,6 +44,12 @@ namespace SpeedyCoding
             return this;
         }
 
+        /// <summary>
+        /// Define matching condition
+        /// </summary>
+        /// <param name="condition"></param>
+        /// <param name="result"></param>
+        /// <returns></returns>
         public PatternMatchOnValue<TIn , TOut> With(
             Predicate<TIn> condition ,
             TOut result )
@@ -43,6 +57,11 @@ namespace SpeedyCoding
             return With( condition , x => result );
         }
 
+        /// <summary>
+        /// In case of matching failing
+        /// </summary>
+        /// <param name="result"></param>
+        /// <returns></returns>
         public PatternMatchOnValue<TIn , TOut> Else(
             Func<TIn , TOut> result )
         {
@@ -57,6 +76,11 @@ namespace SpeedyCoding
             return this;
         }
 
+        /// <summary>
+        /// In case of matching failing
+        /// </summary>
+        /// <param name="result"></param>
+        /// <returns></returns>
         public PatternMatchOnValue<TIn , TOut> Else(
             TOut result )
         {
