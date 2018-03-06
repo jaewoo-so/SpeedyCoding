@@ -11,8 +11,6 @@ namespace SpeedyCoding
     /// </summary>
     public static class CollectionAndData
     {
-
-
         #region Length
 
         /// <summary>
@@ -418,11 +416,5 @@ namespace SpeedyCoding
 
 
         #endregion
-
-   
-
-
-
-
     }
 }
