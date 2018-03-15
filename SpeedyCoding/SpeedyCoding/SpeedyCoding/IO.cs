@@ -81,8 +81,7 @@ namespace SpeedyCoding
         /// <param name="path"></param>
         /// <returns></returns>
         public static string ToCsv<T>(
-        this IEnumerable<T> src,
-        string path) where T : IFormattable
+        this IEnumerable<T> src) where T : IFormattable
         {
             try
             {
@@ -92,8 +91,7 @@ namespace SpeedyCoding
                     sb.Append(item);
                     sb.Append(',');
                 }
-                return sb.ToString();
-            }
+                return sb.ToString();            }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
@@ -109,8 +107,7 @@ namespace SpeedyCoding
         /// <param name="path"></param>
         /// <returns></returns>
         public static string ToCsv<T>(
-    this IEnumerable<IEnumerable<T>> src,
-    string path) where T : IFormattable
+    this IEnumerable<IEnumerable<T>> src) where T : IFormattable
         {
             try
             {
@@ -142,8 +139,7 @@ namespace SpeedyCoding
         /// <param name="path"></param>
         /// <returns></returns>
         public static string ToCsv<T>(
-     this T[,] src,
-     string path) where T : IFormattable
+     this T[,] src) where T : IFormattable
         {
             var sb = new StringBuilder();
             try
