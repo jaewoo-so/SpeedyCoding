@@ -1,16 +1,18 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-     <id>SpeedyCoding</id>
+    <id>SpeedyCoding</id>
     <version>2.0.0</version>
     <title>SpeedyCoding</title>
-    <authors>nchos88 (So Jae Woo)</authors>
-    <owners>nchos88 (So Jae Woo)</owners>
+    <authors>pimier15 , nchos88 (So Jae Woo)</authors>
+    <owners>pimier15</owners>
+	
     <licenseUrl>https://github.com/nchos88/SpeedyCoding/blob/master/Licenece</licenseUrl>
     <projectUrl>https://github.com/nchos88/SpeedyCoding</projectUrl>
-    <iconUrl></iconUrl>
+    <iconUrl>https://github.com/nchos88/SpeedyCoding/blob/master/img/speedycoding.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>This package is for avoid boiler plate code and get readable code easily. No dependecy and all method are extension method </description>
+    <description>This package is for avoid boiler plate code and get readable code easily. C# extension method libarary for 
+efficient coding. You can write method chaining style easily and fit well with functional coding style.</description>
     <releaseNotes>Second Stable Version ( ver 2.0.0) </releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>Extension CodeImprovement Readable</tags>
